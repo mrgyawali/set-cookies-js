@@ -36,7 +36,7 @@ function getCookie(cname) {
 function checkCookie() {
   const cookie_msg = getCookie("noShowMsg"); //get cookie
   if (cookie_msg === "" || cookie_msg === null) {
-    //check if cookie exists
+    // if cookie doesn't exists ==> setCookie("name", "value", exp-days)
     fadeInFunction();
     setCookie("noShowMsg", "yes", 3); // will set the cookie when page is loaded for the first time
     document.querySelector(".close-button").addEventListener("click", hideInfo);
