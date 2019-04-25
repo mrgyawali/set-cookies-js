@@ -1,5 +1,4 @@
 function fadeInFunction() {
-  //can implement plain js as well
   $(".message-us").hide();
   $(".close-button").hide();
   setTimeout(() => {
@@ -48,7 +47,6 @@ function checkCookie() {
 }
 
 function hideInfo() {
-  //we can implement plain js as well
   $(".message-us").fadeOut();
   $(".close-button").fadeOut();
 }
